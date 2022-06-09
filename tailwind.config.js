@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        tiroGurmukhi: ["Tiro Gurmukhi", "serif"]
+        headers: ["Fugaz One", "cursive"]
       }
     },
   },
