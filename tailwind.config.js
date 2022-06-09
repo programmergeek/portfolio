@@ -4,6 +4,11 @@ module.exports = {
     extend: {
       fontFamily: {
         headers: ["Fugaz One", "cursive"]
+      },
+      colors:{
+        'card': '#42341A',
+        'text-fields': '#6E572C',
+        'buttons' : '#B77900',
       }
     },
   },
