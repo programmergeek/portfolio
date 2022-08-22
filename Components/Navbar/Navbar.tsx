@@ -8,11 +8,12 @@ export const Navbar: React.FC = () => {
       style={{
         height: 50,
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
+        border: "1px solid black"
       }}
     >
       <Grid container alignItems="center">
-        <Grid item lg={2}>
+        <Grid item xs>
           <Link
             href="/"
             className="font-semibold text-3xl"
@@ -22,42 +23,52 @@ export const Navbar: React.FC = () => {
             {"<Joseph/>"}
           </Link>
         </Grid>
-        <Grid item md={7} lg={7}></Grid>
-        <Grid item lg={2}>
-          <Grid item>
-            <Link
-              href="#about"
-              underline="none"
-              className="px-3 font-roboto text-lg"
-              color="#000"
-            >
-              About
-            </Link>
-            <Link
-              href="#skils"
-              underline="none"
-              className="px-3 font-roboto text-lg"
-              color="#000"
-            >
-              Skills
-            </Link>
-            <Link
-              href="#projects"
-              underline="none"
-              className="px-3 font-roboto text-lg"
-              color="#000"
-            >
-              Projects
-            </Link>
-            <Link
-              href="#contact"
-              underline="none"
-              className="px-3 font-roboto text-lg"
-              color="#000"
-            >
-              Contact
-            </Link>
-          </Grid>
+        <Grid item xs={5} md={5.7} lg={7.3}></Grid>
+        <Grid item xs>
+          <Box
+            component="div"
+            sx={{
+              display: {
+                xs: "none",
+                md: "block"
+              }
+            }}
+          >
+            <Grid item>
+              <Link
+                href="#about"
+                underline="none"
+                className="px-3 font-roboto text-lg"
+                color="#000"
+              >
+                About
+              </Link>
+              <Link
+                href="#skils"
+                underline="none"
+                className="px-3 font-roboto text-lg"
+                color="#000"
+              >
+                Skills
+              </Link>
+              <Link
+                href="#projects"
+                underline="none"
+                className="px-3 font-roboto text-lg"
+                color="#000"
+              >
+                Projects
+              </Link>
+              <Link
+                href="#contact"
+                underline="none"
+                className="px-3 font-roboto text-lg"
+                color="#000"
+              >
+                Contact
+              </Link>
+            </Grid>
+          </Box>
         </Grid>
       </Grid>
     </Box>
