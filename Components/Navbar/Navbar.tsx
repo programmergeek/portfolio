@@ -1,5 +1,6 @@
 import { Box, Grid, Link } from "@mui/material";
 import React from "react";
+import { DrawerMenu } from "./DrawerMenu";
 
 /* Responsive navigation bar */
 export const Navbar: React.FC = () => {
@@ -23,7 +24,7 @@ export const Navbar: React.FC = () => {
             {"<Joseph/>"}
           </Link>
         </Grid>
-        <Grid item xs={5} md={5.7} lg={7.3}></Grid>
+        <Grid item xs={4.5} sm={9} md={5} lg={7.3}></Grid>
         <Grid item xs>
           <Box
             component="div"
@@ -67,6 +68,19 @@ export const Navbar: React.FC = () => {
               >
                 Contact
               </Link>
+            </Grid>
+          </Box>
+          <Box
+            component="div"
+            sx={{
+              display: {
+                xs: "block",
+                md: "none"
+              }
+            }}
+          >
+            <Grid item xs>
+              <DrawerMenu />
             </Grid>
           </Box>
         </Grid>
