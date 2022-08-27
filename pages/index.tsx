@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/Navbar/Navbar";
-import { Forest } from "../Components/SVG";
+import { HeroBanner } from "../Components/HeroBanner/HeroBanner";
 
 export default function IndexPage() {
   return (
     <div>
       <Navbar />
-      <Forest />
+      <HeroBanner />
     </div>
   );
 }
