@@ -4,7 +4,7 @@ export const ForestFirstLayer = () => {
   return (
     <svg viewBox="0 0 2974 2738" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_7_118)">
-        <rect width="2974" height="2738" fill="white" />
+        <rect width="2974" height="2738" />
         <path
           d="M2021.04 2509.77C2021.36 2509.67 2021.46 2509.56 2021.57 2509.35C2021.36 2509.35 2021.15 2509.56 2021.04 2509.77Z"
           fill="#104539"
