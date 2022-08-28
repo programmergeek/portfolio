@@ -3,7 +3,7 @@ import React from "react";
 export const ForestFifthLayer = () => {
   return (
     <svg viewBox="0 0 2974 2738" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="2974" height="2738" fill="white" />
+      <rect width="2974" height="2738"  />
       <path
         d="M1665.9 2164.9C1665.6 2164.8 1665.4 2164.6 1665.4 2164.5C1665.5 2164.6 1665.7 2164.7 1665.9 2164.9Z"
         fill="#B8C462"
