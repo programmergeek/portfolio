@@ -11,16 +11,16 @@ import { ForestSixthLayer } from "./forestSixthLayer";
 export const HeroBanner = () => {
   return (
     <Box>
-      <Parallax pages={1}>
-        {/* <ParallaxLayer>
+      <Parallax pages={6}>
+        <ParallaxLayer>
           <ForestSixthLayer />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.5}>
+        <ParallaxLayer speed={0.6}>
           <ForestFifthLayer />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.65}>
+        <ParallaxLayer speed={0.7}>
           <ForestFourthLayer />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
         <ParallaxLayer speed={0.75}>
           <ForestThirdLayer />
         </ParallaxLayer>
