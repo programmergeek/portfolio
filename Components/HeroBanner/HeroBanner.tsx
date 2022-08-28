@@ -3,21 +3,35 @@ import { Box } from "@mui/material";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { ForestFirstLayer } from "./forestFirstLayer";
 import { ForestSecondLayer } from "./forestSecondLayer";
+import { ForestThirdLayer } from "./forestThirdLayer";
+import { ForestFourthLayer } from "./forestFourthLayer";
+import { ForestFifthLayer } from "./forestFifthLayer";
+import { ForestSixthLayer } from "./forestSixthLayer";
 
 export const HeroBanner = () => {
   return (
     <Box>
-      <Parallax pages={6}>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <ForestFirstLayer />
+      <Parallax pages={1}>
+        {/* <ParallaxLayer>
+          <ForestSixthLayer />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.25}>
+        <ParallaxLayer speed={0.5}>
+          <ForestFifthLayer />
+        </ParallaxLayer>
+        <ParallaxLayer speed={0.65}>
+          <ForestFourthLayer />
+        </ParallaxLayer> */}
+        <ParallaxLayer speed={0.75}>
+          <ForestThirdLayer />
+        </ParallaxLayer>
+        <ParallaxLayer
+        speed={0.85}
+        >
           <ForestSecondLayer />
         </ParallaxLayer>
-        <ParallaxLayer offset={2}></ParallaxLayer>
-        <ParallaxLayer offset={3}></ParallaxLayer>
-        <ParallaxLayer offset={4}></ParallaxLayer>
-        <ParallaxLayer offset={5}></ParallaxLayer>
+        <ParallaxLayer speed={1}>
+          <ForestFirstLayer />
+        </ParallaxLayer>
       </Parallax>
     </Box>
   );
